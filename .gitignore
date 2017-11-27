@@ -102,3 +102,6 @@ ENV/
 
 # IDEA
 .idea/
+
+# npm
+node_modules/

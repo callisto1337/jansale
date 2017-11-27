@@ -1,0 +1,26 @@
+{
+  "name": "jansale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callisto1337/jansale.git"
+  },
+  "author": "Mikhail Lamotkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callisto1337/jansale/issues"
+  },
+  "homepage": "https://github.com/callisto1337/jansale#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "tether": "^1.4.2"
+  }
+}

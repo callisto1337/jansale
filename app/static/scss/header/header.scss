@@ -1,0 +1,12 @@
+.header {
+  &__title {
+    &__link {
+      color: #5cb85c;
+
+      &:hover {
+        color: #5cb85c;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jansale E-Commerce</title>
+
+  <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="header">
+  <div class="container py-3">
+    <h1 class="header__title font-weight-bold">
+      <a class="header__title__link" href="/">Jansale</a>
+    </h1>
+  </div>
+
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-success">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Main</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Cats</a>
+              <a class="dropdown-item" href="#">Dogs</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<section class="mt-4">
+  <div class="container">
+    <div class="products">
+      <h3 class="products__title">Popular</h3>
+      <div class="row mt-4">
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mt-4">
+          <div class="products__item">
+            <a class="products__item__wrapper" href="#">
+            <img class="products__item__img" src="https://i.pinimg.com/originals/e0/f8/68/e0f868b525d611953ca4c40f272e8527.jpg" alt="">
+          </a>
+          <div class="products__item__info px-3 py-2">
+            <a class="products__item__title font-weight-bold mb-1" href="#">Cute kitty</a>
+            <p class="products__item__price m-0">$2.99</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer mt-5 py-3 bg-faded">
+  <div class="container">
+    <p class="footer__copyright m-0 align-right">Jansale &copy; 2017</p>
+  </div>
+</footer>
+
+<script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'tether/dist/js/tether.min.js' %}"></script>
+<script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}" ></script>
+</body>
+</html>
