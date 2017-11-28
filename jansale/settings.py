@@ -49,6 +49,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -103,10 +104,13 @@ USE_L10N = True
 USE_TZ = True
 
 
-PROJECT_DIR = os.path.dirname(__file__)
+PROJECT_DIR = os.path.abspath(os.path.dirname(__name__))
 
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, '../node_modules/')
+    os.path.join(PROJECT_DIR, 'node_modules')
 ]
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

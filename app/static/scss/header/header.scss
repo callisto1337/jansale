@@ -3,7 +3,8 @@
     &__link {
       color: #5cb85c;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: #5cb85c;
         text-decoration: none;
       }
