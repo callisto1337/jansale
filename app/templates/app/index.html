@@ -30,19 +30,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Main</a>
+            <a class="nav-link" href="/">Main</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Cats</a>
-              <a class="dropdown-item" href="#">Dogs</a>
+              {% for category in categories %}
+                <a class="dropdown-item" href="/category/{{ category.url }}/">{{ category.name }}</a>
+              {% endfor %}
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link disabled" href="#">Contacts</a>
           </li>
         </ul>
       </div>
@@ -50,51 +51,7 @@
   </nav>
 </div>
 
-<section class="mt-4">
-  <div class="container">
-    <div class="products">
-      <h3 class="products__title">New</h3>
-      <div class="row">
-        {% for item in popular %}
-          <div class="col-md-3 col-sm-6 mt-4">
-            <div class="products__item">
-              <a class="products__item__wrapper" href="#">
-                <img class="products__item__img" src="{{ MEDIA_URL }}{{ item.image }}" alt="{{ item.name }}">
-              </a>
-              <div class="products__item__info px-3 py-2">
-                <a class="products__item__title font-weight-bold mb-1" href="#">{{ item.name }}</a>
-                <p class="products__item__price m-0">${{ item.price }}</p>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mt-4">
-  <div class="container">
-    <div class="products">
-      <h3 class="products__title">Popular</h3>
-      <div class="row">
-        {% for item in new %}
-          <div class="col-md-3 col-sm-6 mt-4">
-            <div class="products__item">
-              <a class="products__item__wrapper" href="#">
-                <img class="products__item__img" src="{{ MEDIA_URL }}{{ item.image }}" alt="{{ item.name }}">
-              </a>
-              <div class="products__item__info px-3 py-2">
-                <a class="products__item__title font-weight-bold mb-1" href="#">{{ item.name }}</a>
-                <p class="products__item__price m-0">${{ item.price }}</p>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
+{% block content %}{% endblock %}
 
 <footer class="footer mt-5 py-3 bg-faded">
   <div class="container">

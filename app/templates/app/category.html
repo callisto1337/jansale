@@ -1,0 +1,27 @@
+{% extends 'app/index.html'%}
+
+
+{% block content %}
+  <section class="mt-4">
+    <div class="container">
+      <div class="products">
+        <h3 class="products__title">{{ data_category.name }}</h3>
+        <div class="row">
+          {% for item in category_items %}
+            <div class="col-md-3 col-sm-6 mt-4">
+              <div class="products__item">
+                <a class="products__item__wrapper" href="#">
+                  <img class="products__item__img" src="{{ MEDIA_URL }}{{ item.image }}" alt="{{ item.name }}">
+                </a>
+                <div class="products__item__info px-3 py-2">
+                  <a class="products__item__title font-weight-bold mb-1" href="#">{{ item.name }}</a>
+                  <p class="products__item__price m-0">${{ item.price }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
