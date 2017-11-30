@@ -1,0 +1,23 @@
+{% extends 'app/index.html'%}
+
+
+{% block content %}
+  <div class="contacts">
+    <h3 class="contacts__title">Contacts</h3>
+    <form action="" class="contacts__form">
+      <div class="form-group">
+        <label>
+          E-mail *
+          <input type="email" class="contacts__input form-control" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">
+          Message *
+          <textarea class="contacts__input contacts__input_textarea form-control" id="exampleFormControlTextarea1" required></textarea>
+        </label>
+      </div>
+      <button type="submit" class="contacts__button btn btn-primary">Submit</button>
+    </form>
+  </div>
+{% endblock %}

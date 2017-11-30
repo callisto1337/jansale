@@ -23,3 +23,11 @@ def category(request, url):
         'category_items': category_items,
         'categories': categories}
     )
+
+
+def contacts(request):
+    categories = Category.objects.all()
+
+    return render(request, 'app/contacts.html', {
+        'categories': categories}
+    )

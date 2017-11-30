@@ -22,7 +22,7 @@
   </div>
 
   <nav class="navbar navbar-toggleable-md navbar-inverse bg-success">
-    <div class="container">
+    <div class="container px-2">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,7 +43,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Contacts</a>
+            <a class="nav-link" href="/contacts/">Contacts</a>
           </li>
         </ul>
       </div>
@@ -51,7 +51,11 @@
   </nav>
 </div>
 
-{% block content %}{% endblock %}
+<section>
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+</section>
 
 <footer class="footer mt-5 py-3 bg-faded">
   <div class="container">

@@ -1,0 +1,37 @@
+.contacts {
+  margin-top: 25px;
+
+  &__title {
+    &:after {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 10px;
+      background: #d4d4d5;
+      content: '';
+    }
+  }
+
+  &__button {
+    background: #5cb85c;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: #4d994d;
+    }
+  }
+
+  &__input {
+    margin-top: 5px;
+    min-width: 300px;
+
+    &_textarea {
+      min-height: 80px;
+    }
+  }
+
+  &__form {
+    margin-top: 30px;
+  }
+}
